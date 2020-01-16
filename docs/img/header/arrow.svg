@@ -1,0 +1,34 @@
+<svg id="arrow.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51" height="154.5" viewBox="0 0 51 154.5">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #f2f2f2;
+      }
+
+      .cls-1 {
+        stroke-width: 0;
+        filter: url(#filter);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        opacity: 0.7;
+      }
+
+      .cls-2 {
+        stroke-width: 1px;
+      }
+    </style>
+    <filter id="filter" x="25.5" y="50.5" width="1" height="104" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#f2f2f2"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g style="fill: none; filter: url(#filter)">
+    <rect id="rect" class="cls-1" x="25.5" y="50.5" width="1" height="104" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#rect" style="stroke: #f2f2f2; filter: none; fill: none"/>
+  <circle class="cls-2" cx="25.5" cy="25.5" r="25"/>
+  <image id="simple31" class="cls-3" x="13.5" y="19.5" width="24" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAANCAQAAAAZZWZbAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkAQ4TDg+M4oCBAAAAvklEQVQoz3XRPWoCQRiA4WcWU4pCzFkMBOIBPEFS2wZsAguCeIJg7hD/6lzAG1gJniF2uxdIs6v7MzvVwLwPfHwTsomZq5VM9PRvt/zD2DFkv+BqHiclyD+9QmIPnqwNdJ4yd0psHArybdSRp0V+7i8T/NiBR+sYyRdeijwlAduCDNokX3i+5yXoJo38Dupk2JVXQZV8CfGc0Fj+uzdw8XfbTFoNQuu3SiKW10eqDwZnafO5F/mnrQdTXCzbj/+AJzftTSBc4AAAAABJRU5ErkJggg=="/>
+</svg>
