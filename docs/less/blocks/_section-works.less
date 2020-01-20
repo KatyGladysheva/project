@@ -1,21 +1,23 @@
 .section-works {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  // background-color: rgb(203, 255, 80);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  // медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+  }
+  // медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
 }
 
 .block-works-img {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   flex-wrap: wrap;
-  align-content: flex-start;
-  width: 100%;
-  // align-content: center;
 }
 
 .works-img {
-  // display: block;
   padding: 0;
   margin: 0;
   width: 100%;
@@ -26,23 +28,46 @@
   padding: 0;
   margin: 0;
   line-height: 0;
-  width: 269px;
-}
-// .content-works {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     flex-direction: column;
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
-//     &:after {
-//         content: "";
-//         display: block;
-//         position: absolute;
-//         // top: 0;
-//         // left: 0;
-//         width: 40px;
-//         height: 2px;
-//         background-color: #29323c;
-//         bottom: -10px;
-//     }
-// }
+  // медиа запрос для планшетов и выше
+  @media (min-width: 480px) {
+    width: 50%;
+    height: 190px;
+  }
+
+  // медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    width: 33%;
+    height: 130px;
+  }
+
+  // медиа запрос для планшетов и выше
+  @media (min-width: 992px) {
+    width: 25%;
+    height: 100px;
+  }
+  // медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    width: 20%;
+    height: 200px;
+  }
+}
+
+.block-section-works {
+  text-align: center;
+  margin: 0 auto;
+
+  // медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    max-width: 600px;
+  }
+  // медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    max-width: 1920px;
+  }
+}

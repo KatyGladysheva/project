@@ -1,0 +1,170 @@
+.section-form {
+}
+
+.block-form-content {
+  display: flex;
+  flex-direction: column;
+
+  // медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+  }
+  // медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    max-width: 1920px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+}
+
+.block-form {
+  position: relative;
+  background-color: #546267;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.253);
+  }
+
+  // медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    background-image: url("../img/form/form.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  // медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    width: 50%;
+  }
+}
+
+.form-wrapper {
+  width: 285px;
+  margin: 0 auto;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+  // медиа запрос для планшетов и выше
+  @media (min-width: 480px) {
+    max-width: 422px;
+  }
+
+  // медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    max-width: 422px;
+  }
+  // медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    max-width: 422px;
+  }
+}
+
+.form-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  // медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+  }
+  // медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    margin-bottom: 25px;
+  }
+}
+
+.form-input {
+  width: 200px;
+  height: 40px;
+  font-size: 14px;
+  color: #fff;
+  background-color: rgba(143, 28, 28, 0);
+  border: 1px solid #fff;
+
+  // медиа запрос для планшетов и выше
+  @media (min-width: 480px) {
+    width: 300px;
+  }
+
+  // медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    width: 305px;
+  }
+  // медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    width: 305px;
+  }
+}
+
+.form-inputs-name {
+  min-width: 80px;
+}
+
+textarea {
+  width: 200px;
+  height: 145px;
+  background-color: rgba(143, 28, 28, 0);
+
+  // медиа запрос для планшетов и выше
+  @media (min-width: 480px) {
+    width: 300px;
+  }
+
+  // медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    width: 305px;
+  }
+  // медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    width: 305px;
+  }
+}
+
+.block-map {
+  width: 100%;
+
+  // медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    position: relative;
+    width: 100%;
+    &::before {
+      content: url(../img/form/flat-marker.png);
+      position: absolute;
+      top: 180px;
+      left: 259px;
+    }
+    // медиа запрос для десктопов
+    @media (min-width: 1200px) {
+      width: 50%;
+    }
+  }
+}
+
+.block-map img {
+  width: 100%;
+}
+
+.button_block input {
+  padding: 15px 35px;
+  font-size: 14px;
+  color: #fff;
+  background-color: rgba(143, 28, 28, 0);
+  border: 1px solid #fff;
+  margin-left: auto;
+  display: block;
+}

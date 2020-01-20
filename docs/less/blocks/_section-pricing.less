@@ -1,119 +1,158 @@
 .section-pricing {
-  padding-top: 102px;
-  padding-bottom: 102px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .blocks-pricing-row {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  // margin-left: auto;
-  // margin-right: auto;
 
   // медиа запрос для планшетов и выше
   @media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
   }
   // медиа запрос для десктопов
   @media (min-width: 1200px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
     flex-direction: row;
   }
 }
 
 .blocks-pricing {
   margin: 0 auto;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   position: relative;
   text-align: center;
   width: 291px;
-  // background-color: #123124;
-  // border-radius: 8px;
-  padding: 35px 45px;
-  // z-index: 2;
+  margin-bottom: 35px;
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  &::before {
-    position: absolute;
-    content: "";
-    display: block;
-    top: 45%;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #b42323;
-    opacity: 0.1;
-  }
   // медиа запрос для планшетов и выше
   @media (min-width: 768px) {
-    padding: 35px 7px;
-    width: 230px;
-    margin-bottom: 0;
+    width: 400px;
   }
   // медиа запрос для десктопов
   @media (min-width: 1200px) {
-    padding: 40px 45px;
-
-    width: 380px;
-    border: 1px solid #b42323;
+    width: 400px;
+    border: 1px solid #eeeeee;
     margin: 0;
     padding: 0;
     padding-top: 25px;
     padding-bottom: 35px;
-    padding-left: 75px;
-    padding-right: 75px;
-    min-height: 500px;
-  }
-}
 
-.blocks-pricing-big {
-  min-height: 536px;
-  padding-top: 60px;
+    min-height: 500px;
+
+    &:active {
+      border-top: 5px solid #29323c;
+    }
+  }
 }
 
 .name-price {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #29323c;
 }
 
 .cost-price {
   margin-bottom: 5px;
+  font-size: 45px;
+  color: #29323c;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 .month-price {
-  margin-bottom: 100px;
+  margin-bottom: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #bdbfc1;
 }
 
 .card-price {
   margin: 0;
   padding: 0;
-  margin-bottom: 80px;
 }
 
 .price-list {
   list-style-type: none;
-  margin-bottom: 25px;
+  line-height: 2.8;
   font-size: 14px;
+  color: #29323c;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
-.blocks-pricing-big .card-price {
-  margin-bottom: 65px;
+.blocks-pricing {
+  position: relative;
+  border: 2px solid #eeeeee;
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: #fff;
+
+  &:hover {
+    border-top: 2px solid #fff;
+  }
+
+  &:hover .cost-price {
+    font-weight: 700;
+  }
+
+  &:hover:after {
+    top: -38px;
+  }
 }
 
-.blocks-pricing-min .card-price {
-  margin-bottom: 40px;
-  // margin-top: 70px;
+.blocks-pricing:after {
+  content: "";
+  position: absolute;
+  height: 40px;
+  top: 40px;
+  left: -1px;
+  right: -1px;
+  border: 2px solid #eeeeee;
+  border-bottom: 0px;
+  border-top: 5px solid #323232;
+  z-index: -1;
+  background-color: #fff;
+  transition: 0.2s;
 }
 
-.blocks-pricing-min .month-price {
-  margin-bottom: 70px;
+.block-pricing-header {
+  border-bottom: 2px solid #eeeeee;
+  min-width: 140px;
 }
 
-.blocks-pricing-big .month-price {
-  margin-bottom: 90px;
+.block-pricing-content {
+  padding-top: 40px;
+  min-height: 270px;
+}
+
+.button-link-price {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  background-color: #485563;
+  border-radius: 30px;
+  padding: 15px 35px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+
+  &:hover {
+    color: black;
+    background-color: #848b8d;
+  }
 }

@@ -1,0 +1,94 @@
+.footer {
+  color: #525961;
+  padding-top: 50px;
+  padding-bottom: 45px;
+  background-color: #f5f5f5;
+}
+
+.footer-logo {
+  font-family: "airbagregular";
+  font-size: 48px;
+  color: #525961;
+  text-decoration: none;
+  margin-right: 30px;
+
+  // медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+  }
+  // медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    margin-right: 60px;
+  }
+}
+
+.copyright {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.footer-row {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  // медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+  }
+  // медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.row-logo {
+  display: inherit;
+}
+
+.fa-facebook-official {
+  font-size: 25px;
+  border-radius: 20%;
+}
+
+.row-social {
+  display: inherit;
+  margin-bottom: 25px;
+  // медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+  }
+  // медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.social-text {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin-right: 20px;
+
+  // медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+  }
+  // медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    margin-right: 25px;
+  }
+}
+
+.footer-social-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #525961;
+  &:hover {
+    color: #778da5;
+  }
+}
