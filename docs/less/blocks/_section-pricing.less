@@ -10,7 +10,14 @@
 
   // медиа запрос для планшетов и выше
   @media (min-width: 768px) {
+   
   }
+
+  
+    // медиа запрос для планшетов и выше
+    @media (min-width: 992px) {
+      flex-direction: row;
+    }
   // медиа запрос для десктопов
   @media (min-width: 1200px) {
     padding-top: 100px;
@@ -26,7 +33,7 @@
   position: relative;
   text-align: center;
   width: 291px;
-  margin-bottom: 35px;
+  margin-bottom: 55px;
 
   &:last-child {
     margin-bottom: 0;
@@ -36,6 +43,12 @@
   @media (min-width: 768px) {
     width: 400px;
   }
+
+    // медиа запрос для планшетов и выше
+    @media (min-width: 992px) {
+      max-width: 400px;
+      width: 32%;
+    }
   // медиа запрос для десктопов
   @media (min-width: 1200px) {
     width: 400px;
@@ -91,6 +104,17 @@
   color: #29323c;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+
+  // медиа запрос для планшетов и выше
+  @media (min-width: 992px) {
+   font-size: 12px;
+  }
+
+  
+  // медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    font-size: 14px;
+   }
 }
 
 .blocks-pricing {

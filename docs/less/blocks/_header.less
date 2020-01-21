@@ -101,6 +101,7 @@
 }
 
 .content-button {
+  display: inline-block;
   padding: 10px 25px;
   // height: 60px;
   border: 1px solid #fff;
@@ -117,6 +118,10 @@
   // z-index: 2;
   cursor: pointer;
   text-decoration: none;
+
+  &:hover {
+    background-color: #9a9fa1;
+  }
 }
 
 .header-scroll {
@@ -128,14 +133,20 @@ display: none;
 }
 // медиа запрос для десктопов
 @media (min-width: 1200px) {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 position: absolute;
 bottom: 14%;
 left: 50%;
-right: 50%;
-// top: 0;
+width: 60px;
+height: 60px;
 z-index: 2;
-transform: translateX(-30px);
+border-radius: 50%;
+ border: 1px solid #fff;
+
+transform: translateX(-50%);
 
 &::before {
   content: "";
@@ -149,14 +160,19 @@ transform: translateX(-30px);
  background-color: #fff;
   z-index: 2;
 }
+
+&:hover {
+  background-color: #7f9da8;
 }
+}
+
 }
 
 .header-scroll .fa-angle-down {
   color: white;
   font-size: 60px;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  padding: 3px 12px;
+ 
+  
+  // padding: 3px 12px;
 
 }

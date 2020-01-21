@@ -37,6 +37,13 @@
   // медиа запрос для планшетов и выше
   @media (min-width: 768px) {
   }
+
+   // медиа запрос для планшетов и выше
+   @media (min-width: 800px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
   // медиа запрос для десктопов
   @media (min-width: 1200px) {
     display: flex;
@@ -47,7 +54,8 @@
 }
 
 .row-logo {
-  display: inherit;
+  display: flex;
+  align-items: center;
 }
 
 .fa-facebook-official {
@@ -56,13 +64,17 @@
 }
 
 .row-social {
-  display: inherit;
+  display: flex;
+  align-items: center;
   margin-bottom: 25px;
   // медиа запрос для планшетов и выше
   @media (min-width: 768px) {
+    margin-bottom: 0;
   }
   // медиа запрос для десктопов
   @media (min-width: 1200px) {
+    display: flex;
+  align-items: center;
     margin-bottom: 0;
   }
 }
