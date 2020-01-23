@@ -1,35 +1,158 @@
 .header__burger {
+  display: block;
+  position: relative;
+  width: 30px;
+  // height: 20px;
+  height: 5px;
+  background-color:#fff;
+  z-index: 4;
+  cursor: pointer;
+
+  &::before {
     display: block;
-    position: relative;
-    width: 27px;
-    // height: 20px;
-    height: 2px;
-    background-color:#fff;
-    z-index: 4;
-    cursor: pointer;
-  
-    &::before {
-      display: block;
-      content: "";
-      background-color: #fff;
-      position: absolute;
-      width: 27px;
-      height: 2px;
-      left: 0;
-      top: -6px;
-      transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
-    }
-  
-    &::after {
-      display: block;
-      content: "";
-      background-color: #fff;
-      position: absolute;
-      width: 27px;
-      height: 2px;
-      left: 0;
-      top: 6px;
-      transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
-    }
- 
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    left: 0;
+    top: -10px;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
   }
+
+  &::after {
+    display: block;
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    left: 0;
+    top: 10px;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+  // медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+  }
+  // медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    
+  }
+}
+
+.header__burger.header__burger-active {
+  background-color: transparent;
+}
+
+.header__burger.header__burger-active::before {
+  transform: rotate(45deg);
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.header__burger.header__burger-active::after {
+  transform: rotate(-45deg);
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.burger-wrapper {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-nav {
+  display: block;
+  position: fixed;
+  right: -320px;
+  top: 0;
+  height: 100vh;
+  width: 320px;
+  background-color: #345543;
+  z-index: 3;
+  padding: 35px;
+  transition: transform 0.5s ease-in;
+
+  // медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    // width: 100%;
+    width: 400px;
+    right: -400px;
+  }
+
+    // // медиа запрос для планшетов и выше
+    @media (min-width: 900px) {
+      // width: 400px;
+      // right: -400px;
+    }
+
+    //   // медиа запрос для планшетов и выше
+      @media (min-width: 1000px) {
+        // width: 400px;
+        // right: -400px;
+      }
+  // медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    // right: -530px;
+    // width: 500px;
+  }
+    // медиа запрос для десктопов
+    @media (min-width: 1600px) {
+      right: -630px;
+      width: 600px;
+    }
+}
+
+.mobile-nav--active {
+  transform: translateX(-100%);
+}
+
+.mobile-nav__title {
+  // position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #b49c9c;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.mobile-nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.mobile-nav__item {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.mobile-nav__link {
+  color: rgb(212, 198, 198);
+  font-size: 20px;
+  font-weight: 700;
+
+  &:hover {
+    color: rgb(51, 129, 51);
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+

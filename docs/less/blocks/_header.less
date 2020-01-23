@@ -7,6 +7,7 @@
   background-size: cover;
   padding-top: 30px;
   padding-bottom: 30px;
+  overflow: hidden;
  
   // медиа запрос для планшетов и выше
   @media (min-width: 768px) {
@@ -66,13 +67,14 @@
 .header-menu-wrapper {
   display: inherit;
   align-items: inherit;
+  z-index: 10;
 }
 
 .header-content {
 
   position: relative;
   //  width: 690px;
-  z-index: 2;
+  z-index: 1;
   display: flex;
       justify-content: center;
       align-items: center;
@@ -152,7 +154,7 @@ transform: translateX(-50%);
   content: "";
   display: block;
   position: absolute;
-  top: 70px;
+  top: 60px;
   left: 30px;
   // bottom: 20;
   height: 104px;
