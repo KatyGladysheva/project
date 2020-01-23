@@ -539,37 +539,37 @@ body {
 .mobile-nav {
   display: block;
   position: fixed;
-  right: -320px;
+  right: 0px;
   top: 0;
   height: 100vh;
   width: 320px;
-  background-color: #345543;
+  background-color: rgba(52, 85, 67, 0.959);
   z-index: 3;
   padding: 35px;
   -webkit-transition: -webkit-transform 0.5s ease-in;
   transition: -webkit-transform 0.5s ease-in;
   transition: transform 0.5s ease-in;
   transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 @media (min-width: 768px) {
   .mobile-nav {
     width: 400px;
-    right: -400px;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 900px) {
   .mobile-nav {
-    right: -630px;
-    width: 600px;
+    width: 40%;
   }
 }
 .mobile-nav--active {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 .mobile-nav__title {
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   color: #b49c9c;
   font-size: 30px;
   font-weight: 900;
@@ -590,6 +590,9 @@ body {
   color: #d4c6c6;
   font-size: 20px;
   font-weight: 700;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #d4c6c6;
 }
 .mobile-nav__link:hover {
   color: #338133;
@@ -759,7 +762,9 @@ body {
   margin-right: 0;
 }
 .team-icon:hover {
-  background-color: #46a3aa;
+  opacity: 0.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .block-partners {
   display: none;
@@ -905,8 +910,8 @@ body {
   position: relative;
   border: 2px solid #eeeeee;
   cursor: pointer;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   background-color: #fff;
 }
 .blocks-pricing:hover {
@@ -1003,7 +1008,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.253);
+  background-color: rgba(0, 0, 0, 0.507);
 }
 @media (min-width: 768px) {
   .block-form {
@@ -1069,6 +1074,8 @@ body {
   color: #fff;
   background-color: rgba(143, 28, 28, 0);
   border: 1px solid #fff;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 480px) {
   .form-input {
@@ -1092,6 +1099,8 @@ textarea {
   width: 200px;
   height: 145px;
   background-color: rgba(143, 28, 28, 0);
+  color: #fff;
+  padding: 14px;
 }
 @media (min-width: 480px) {
   textarea {

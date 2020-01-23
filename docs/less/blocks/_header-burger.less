@@ -67,53 +67,36 @@
 .mobile-nav {
   display: block;
   position: fixed;
-  right: -320px;
+  right: 0px;
   top: 0;
   height: 100vh;
   width: 320px;
-  background-color: #345543;
+  background-color: rgba(52, 85, 67, 0.959);
   z-index: 3;
   padding: 35px;
   transition: transform 0.5s ease-in;
+  transform: translateX(100%);
 
   // медиа запрос для планшетов и выше
-  @media (min-width: 768px) {
-    // width: 100%;
+  @media (min-width: 768px) { 
     width: 400px;
-    right: -400px;
   }
 
     // // медиа запрос для планшетов и выше
     @media (min-width: 900px) {
-      // width: 400px;
-      // right: -400px;
+    width: 40%;
     }
 
-    //   // медиа запрос для планшетов и выше
-      @media (min-width: 1000px) {
-        // width: 400px;
-        // right: -400px;
-      }
-  // медиа запрос для десктопов
-  @media (min-width: 1200px) {
-    // right: -530px;
-    // width: 500px;
-  }
-    // медиа запрос для десктопов
-    @media (min-width: 1600px) {
-      right: -630px;
-      width: 600px;
-    }
 }
 
 .mobile-nav--active {
-  transform: translateX(-100%);
+  transform: translateX(0%);
 }
 
 .mobile-nav__title {
   // position: relative;
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   color: #b49c9c;
   font-size: 30px;
   font-weight: 900;
@@ -138,6 +121,9 @@
   color: rgb(212, 198, 198);
   font-size: 20px;
   font-weight: 700;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid rgb(212, 198, 198);
 
   &:hover {
     color: rgb(51, 129, 51);
