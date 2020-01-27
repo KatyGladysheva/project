@@ -2,32 +2,34 @@
 // font-family: 'Open Sans', sans-serif;
 // font-family: 'airbagregular';
 
-
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  
-  }
-  
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 .container {
-      width: 100%;
-      padding-left: 15px;
-      padding-right: 15px;
-      margin: 0 auto;
-// медиа запрос для планшетов и выше
-@media (min-width: 768px) {
-  max-width: 768px;
-}
-// медиа запрос для десктопов
-@media (min-width: 1200px) {
-  padding: 0;
-max-width: 1170px;
-}
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  // медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    max-width: 768px;
   }
+  // медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    padding: 0;
+    max-width: 1170px;
+  }
+}
